@@ -1,73 +1,95 @@
-# Welcome to your Lovable project
+🎯 Vardiya Frontend — Lovable AI Studio (React + TypeScript)
 
-## Project info
+Bu proje, Vardiya Yönetim Sistemi için oluşturulmuş modern bir frontend arayüzüdür.
+Lovable AI Studio üzerinde geliştirilmiş olup, sistemin Rails API backend’ine bağlanarak CRUD işlemlerini test eder.
 
-**URL**: https://lovable.dev/projects/5464ee35-761f-43fe-947f-a020be66992b
+🚀 Proje Özeti
+Katman	Teknoloji
+Framework	React + TypeScript
+Tasarım Aracı	Lovable AI Studio
+State Yönetimi	Zustand
+API Katmanı	Axios
+Test Aracı	Cypress
+Routing	React Router DOM v6
+UI Kütüphanesi	ShadCN UI + TailwindCSS
+📦 Yapı
+src/
+ ├── api/           # Axios API katmanı
+ ├── store/         # Zustand state yönetimi
+ ├── components/    # Layout, Navbar, Card vb.
+ ├── pages/         # Çalışanlar, Vardiyalar, Atamalar sayfaları
+ └── App.tsx        # Ana yönlendirme
 
-## How can I edit this code?
+⚙️ Kurulum
 
-There are several ways of editing your application.
+1️⃣ Gerekli bağımlılıkları yükle
 
-**Use Lovable**
+npm install
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5464ee35-761f-43fe-947f-a020be66992b) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+2️⃣ .env dosyası oluştur
 
-**Use your preferred IDE**
+VITE_API_BASE_URL=http://localhost:3000/api/v1
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+3️⃣ Uygulamayı çalıştır
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+👉 Aç: http://localhost:8080
 
-**Use GitHub Codespaces**
+🧪 Cypress Testleri
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Tüm sayfalar data-cy attribute’ları ile test edilebilir hale getirilmiştir.
+Cypress ile çalışan, vardiya ve atama CRUD akışları uçtan uca (E2E) test edilmiştir.
 
-## What technologies are used for this project?
+✅ Geçen testler:
 
-This project is built with:
+employees.cy.js → Çalışan CRUD
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+shifts.cy.js → Vardiya CRUD
 
-## How can I deploy this project?
+assignments.cy.js → Atama CRUD
 
-Simply open [Lovable](https://lovable.dev/projects/5464ee35-761f-43fe-947f-a020be66992b) and click on Share -> Publish.
+vardiya_frontend.cy.js → Ana sayfa erişimi
 
-## Can I connect a custom domain to my Lovable project?
+Tüm testler başarıyla tamamlanmıştır. 🎥
 
-Yes, you can!
+📺 YouTube Demo Videosu
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🎬 İzle: https://youtu.be/OfNNLF259mw
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+🎨 Tasarım Özellikleri
+
+Modern, sade ve soft pastel renk paleti
+
+Tam responsive yapı (desktop & mobile)
+
+Kullanıcı dostu arayüz
+
+Erişilebilirlik odaklı WCAG uyumlu tasarım
+
+💻 Kullanılan Teknolojiler
+Katman	Teknoloji
+Frontend	React + TypeScript
+Tasarım	Lovable AI Studio
+Stil	TailwindCSS + ShadCN UI
+State	Zustand
+Test	Cypress
+API	Axios (REST)
+🎓 Mentorlar & Teşekkür
+
+Bu proje sürecinde bana rehberlik eden
+Nurettin Şenyer ve Ömer Durmuş hocalarıma teşekkür ederim. 💐
+
+📂 İlgili Bağlantılar
+
+🔗 Frontend (Lovable): https://github.com/ceydasaricelik/vardiya-frontend
+
+🔗 Backend (Rails API): https://github.com/ceydasaricelik/vardiya_api
+
+🎥 Demo Video: YouTube
+
+🩷 Hazırlayan: Halide Ceyda Sarıçelik
+#React #TypeScript #Cypress #TailwindCSS #ShadCN #LovableAI #RailsAPI #FullStackDevelopment #SoftwareEngineering #UniversityProject #VardiyaFrontend
